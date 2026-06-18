@@ -16,7 +16,7 @@ Maintenant, un réseau de neurones à une couche cachée. J'implémente forward 
 
 5
 00:07:30,000 --> 00:09:30,000
-PyTorch automatise la rétropropagation via autograd. Je montre comment écrire un Module, lancer un training loop et regarder la loss descendre. Je montre aussi le notebook étendu avec suivi des gradients et histogrammes d'activations.
+PyTorch automatise la rétropropagation via autograd. Je montre comment écrire un Module, lancer un training loop et regarder la loss descendre. Je montre aussi la version étendue notebooks/02_mlp_pytorch_enhanced.ipynb où l'on suit la norme des gradients et l'histogramme d'activations.
 
 6
 00:09:30,000 --> 00:10:30,000
