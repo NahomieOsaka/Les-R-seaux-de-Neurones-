@@ -1,0 +1,7 @@
+# webcam_ranges.txt
+# spécifie les plages (start end) en secondes où la vignette webcam doit apparaître
+# exemple: pour afficher la webcam de 120s à 150s et de 300s à 330s:
+# 120 150
+# 300 330
+
+# par défaut vide -> si webcam.mp4 présent et vide, overlay s'affichera tout le temps
