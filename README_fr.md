@@ -1,17 +1,16 @@
-# Les Reseaux de Neurones - Notebooks pédagogiques
+# Ajouts pour rn-basics
 
-Ce dépôt contient des notebooks pédagogiques en français pour apprendre les réseaux de neurones (RN) depuis les bases, avec une approche très guidée et des explications pas à pas.
+J'ai ajouté plusieurs ressources pédagogiques et outils pour t'aider à apprendre pas à pas et pour vérifier ton environnement.
 
-Fichiers ajoutés dans la branche rn-basics :
-- notebooks/01_mlp_numpy.ipynb : implémentation NumPy (perceptron, régression logistique, MLP from-scratch, gradient checking)
-- notebooks/02_mlp_pytorch.ipynb : implémentation équivalente en PyTorch (Module, training loop, visualisations)
-- README_fr.md : instructions pour exécuter les notebooks localement ou sur Colab
-- requirements.txt : bibliothèques recommandées
+Fichiers ajoutés :
+- notebooks/01_mlp_numpy_exercices.ipynb : exercices guidés et solutions pour renforcer les notions du notebook NumPy.
+- notebooks/02_mlp_pytorch_enhanced.ipynb : version étendue du notebook PyTorch avec visualisations des normes de gradient, histogrammes d'activations, et exercices.
+- tests/auto_test_env_and_training.py : script léger pour vérifier l'environnement (packages) et lancer un court entraînement d'un MLP PyTorch pour vérifier que tout tourne (CPU/GPU) et que la loss diminue.
+- README_fr.md : mis à jour pour décrire les nouveaux fichiers et comment les utiliser.
 
-Instructions rapides :
-- Pour exécuter localement :
-  - Crée un environnement virtuel (conda ou venv) et installe `pip install -r requirements.txt`.
-  - Lance `jupyter lab` ou `jupyter notebook` et ouvre les notebooks dans `notebooks/`.
-- Pour exécuter sur Colab : charge le notebook depuis GitHub (File -> Open notebook -> GitHub).
+Utilisation rapide du script de test :
+- python tests/auto_test_env_and_training.py
 
-Ce README est en français, et les notebooks contiennent des explications détaillées ligne-à-ligne pour les débutants Python.
+Il fera :
+- vérifier les dépendances listées dans requirements.txt (présence importable),
+- exécuter un entraînement court (5 epochs) sur un petit sous-ensemble des digits et vérifier que la loss diminue (contrôle basique).
