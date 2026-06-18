@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:30,000
+Bonjour — je suis NahomieOsaka. Dans cette mini-vidéo nous allons comprendre les réseaux de neurones pas à pas : du perceptron à un MLP simple, puis la même chose en PyTorch. L'objectif : que tu puisses démarrer à coder et comprendre pourquoi la rétropropagation fonctionne.
+
+2
+00:00:30,000 --> 00:02:30,000
+Commençons par le perceptron, le plus simple des neurones artificiels. Mathématiquement : z = w·x + b ; sortie = 1 si z>=0 sinon 0. C'est un classifieur linéaire. Je vais exécuter la cellule Perceptron du notebook NumPy et montrer la frontière de décision.
+
+3
+00:02:30,000 --> 00:04:30,000
+La régression logistique prend l'idée d'un modèle linéaire mais utilise la sigmoïde et la cross-entropy comme loss, ce qui permet un entraînement via gradient descent. Je montre la fonction sigmoid et la routine d'entraînement, puis la courbe de loss.
+
+4
+00:04:30,000 --> 00:07:30,000
+Maintenant, un réseau de neurones à une couche cachée. J'implémente forward (z1, a1, logits) puis backward en appliquant la règle de la chaîne. Je montre la classe SimpleMLP et j'exécute un court entraînement. Ensuite, démonstration du gradient checking et explication de sa pertinence.
+
+5
+00:07:30,000 --> 00:09:30,000
+PyTorch automatise la rétropropagation via autograd. Je montre comment écrire un Module, lancer un training loop et regarder la loss descendre. Je montre aussi le notebook étendu avec suivi des gradients et histogrammes d'activations.
+
+6
+00:09:30,000 --> 00:10:30,000
+Pour progresser : répète l'implémentation NumPy, reproduis-la en PyTorch, puis aborde stabilisation et optimisateurs (Adam), ensuite passe aux GANs. Liens et ressources dans le README du dépôt.
+
+7
+00:10:30,000 --> 00:11:00,000
+Merci d'avoir regardé — si tu veux, je pousse le mp4 final et le .srt dans la branche rn-basics. Dis-moi si tu veux un ton un peu sarcastique ou simplement clair et chaleureux.
